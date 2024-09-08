@@ -33,5 +33,6 @@ archive-all:
 
 publish: archive-all
     gh release create "v{{ version }}" --latest \
+        -t "v{{ version }}" \
         "./releases/RecMonoChielo.{{ version }}.tgz" \
         "./releases/RecMonoChieloNerdFont.{{ version }}.tgz"
